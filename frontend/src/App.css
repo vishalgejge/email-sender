@@ -1,0 +1,128 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://wallpapers.com/images/hd/email-background-t0cbknt4ahfsy4rc.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header .logo {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="file"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background: #ffffff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:active {
+  background-color: #004085;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 48px;
+  color: #007bff;
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .header h1 {
+    font-size: 1.2em;
+  }
+
+  .footer-icon {
+    font-size: 36px;
+  }
+
+  .form-group {
+    padding: 0 5px;
+  }
+
+  .submit-button {
+    width: calc(100% - 10px);
+    margin: 0 5px;
+  }
+}
